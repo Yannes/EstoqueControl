@@ -15,6 +15,9 @@
 		A655FF932442C28300B927B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A655FF912442C28300B927B3 /* LaunchScreen.storyboard */; };
 		A6AD095E2442DA540037331A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD095D2442DA540037331A /* TabBar.swift */; };
 		A6AD09602442DA5F0037331A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD095F2442DA5F0037331A /* ContentView.swift */; };
+		A6BC535E2443774700CF3EEE /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC535D2443774700CF3EEE /* PlaySound.swift */; };
+		A6BC5360244377E300CF3EEE /* sound-click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6BC535F244377E300CF3EEE /* sound-click.mp3 */; };
+		A6BC536224439CF100CF3EEE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC536124439CF100CF3EEE /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		A655FF942442C28300B927B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6AD095D2442DA540037331A /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		A6AD095F2442DA5F0037331A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A6BC535D2443774700CF3EEE /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		A6BC535F244377E300CF3EEE /* sound-click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-click.mp3"; sourceTree = "<group>"; };
+		A6BC536124439CF100CF3EEE /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +68,12 @@
 			children = (
 				A655FF832442C28000B927B3 /* AppDelegate.swift */,
 				A6AD095F2442DA5F0037331A /* ContentView.swift */,
+				A6BC535D2443774700CF3EEE /* PlaySound.swift */,
 				A655FF852442C28000B927B3 /* SceneDelegate.swift */,
 				A6AD095D2442DA540037331A /* TabBar.swift */,
+				A6BC536124439CF100CF3EEE /* SettingsView.swift */,
 				A655FF8C2442C28300B927B3 /* Assets.xcassets */,
+				A6BC535F244377E300CF3EEE /* sound-click.mp3 */,
 				A655FF912442C28300B927B3 /* LaunchScreen.storyboard */,
 				A655FF942442C28300B927B3 /* Info.plist */,
 				A655FF872442C28000B927B3 /* EstoqueControl.xcdatamodeld */,
@@ -140,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A655FF932442C28300B927B3 /* LaunchScreen.storyboard in Resources */,
+				A6BC5360244377E300CF3EEE /* sound-click.mp3 in Resources */,
 				A655FF902442C28300B927B3 /* Preview Assets.xcassets in Resources */,
 				A655FF8D2442C28300B927B3 /* Assets.xcassets in Resources */,
 			);
@@ -152,7 +162,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6BC536224439CF100CF3EEE /* SettingsView.swift in Sources */,
 				A655FF842442C28000B927B3 /* AppDelegate.swift in Sources */,
+				A6BC535E2443774700CF3EEE /* PlaySound.swift in Sources */,
 				A655FF892442C28000B927B3 /* EstoqueControl.xcdatamodeld in Sources */,
 				A6AD09602442DA5F0037331A /* ContentView.swift in Sources */,
 				A655FF862442C28000B927B3 /* SceneDelegate.swift in Sources */,

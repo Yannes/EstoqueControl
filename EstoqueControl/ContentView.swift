@@ -33,7 +33,7 @@ struct ContentView: View {
                 }
                 else{
                     
-                    Color.orange.edgesIgnoringSafeArea(.all)
+                    SettingsView().padding(.top,20)
                 }
             }.edgesIgnoringSafeArea(.all)
             

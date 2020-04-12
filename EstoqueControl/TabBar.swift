@@ -10,6 +10,8 @@ import SwiftUI
 struct TabBar : View {
     
     @Binding var index : Int
+    var hapticImpact = UIImpactFeedbackGenerator(style: .heavy)
+    
     
     var body : some View{
         
@@ -18,6 +20,8 @@ struct TabBar : View {
             HStack{
                 
                 Button(action: {
+                 //   playSound(sound: "sound-click", type: "mp3")
+                    self.hapticImpact.impactOccurred()
                     self.index = 0
                 }) {
                     
@@ -42,6 +46,8 @@ struct TabBar : View {
                 Spacer(minLength: 10)
                 
                 Button(action: {
+              //       playSound(sound: "sound-click", type: "mp3")
+                     self.hapticImpact.impactOccurred()
                     self.index = 1
                     
                 }) {
@@ -66,7 +72,8 @@ struct TabBar : View {
                 Spacer(minLength: 10)
                 
                 Button(action: {
-                    
+               //      playSound(sound: "sound-click", type: "mp3")
+                     self.hapticImpact.impactOccurred()
                     self.index = 2
                     
                 }) {
@@ -91,22 +98,23 @@ struct TabBar : View {
                 Spacer(minLength: 10)
                 
                 Button(action: {
-                    
+               //      playSound(sound: "sound-click", type: "mp3")
+                     self.hapticImpact.impactOccurred()
                     self.index = 3
                     
                 }) {
                     VStack(spacing:10){
                         if self.index != 3{
-                            Image(systemName: "person.fill")
+                            Image(systemName: "gear")
                                 .foregroundColor(Color.gray.opacity(0.5))
-                            Text("heart")
+                            Text("Ajustes")
                                 .foregroundColor(Color.gray.opacity(0.7))
                                 .font(.system(size: 10, design: .serif))
                         }
                         else{
-                            Image(systemName: "person.fill")
+                            Image(systemName: "gear")
                                 .myImageModifier()
-                            Text("heart")
+                            Text("Ajustes")
                                 .foregroundColor(Color.gray.opacity(0.7))
                                 .font(.system(size: 10, design: .serif))
                         }
@@ -120,7 +128,7 @@ struct TabBar : View {
                 .animation(.easeInOut)
                 .edgesIgnoringSafeArea(.bottom)
         }.background(Color.primary)
-            .edgesIgnoringSafeArea(.bottom)
+        .edgesIgnoringSafeArea(.bottom)
     }
 }
 
