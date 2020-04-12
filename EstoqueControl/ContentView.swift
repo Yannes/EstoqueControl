@@ -9,8 +9,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var index = 0
+    
     var body: some View {
-        Text("Hello, World!")
+        
+        VStack(spacing: 0){
+            
+            ZStack{
+                Color.white
+                
+                if self.index == 0{
+                    
+                    Color.secondary
+                }
+                else if self.index == 1{
+                    
+                    Color.yellow
+                }
+                else if self.index == 2{
+                    
+                    Color.blue
+                }
+                else{
+                    
+                    Color.orange.edgesIgnoringSafeArea(.all)
+                }
+            }.edgesIgnoringSafeArea(.all)
+            
+            TabBar(index: self.$index)
+            
+        }
+       .edgesIgnoringSafeArea(.bottom)
     }
 }
 
@@ -20,41 +50,3 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-
-struct CircleTab: View {
-    var body: some View{
-        HStack{
-            Button(action: {
-                
-            }) {
-                Image(systemName: "heart")
-            }
-            
-            Spacer(minLength: 15)
-            
-            Button(action: {
-                
-            }) {
-                Image(systemName: "heart")
-            }
-            
-            Spacer(minLength: 15)
-            
-            Button(action: {
-                
-            }) {
-                Image(systemName: "heart")
-            }
-            
-            Spacer(minLength: 15)
-            
-            Button(action: {
-                
-            }) {
-                Image(systemName: "heart")
-            }
-            
-        }
-    }
-    
-}

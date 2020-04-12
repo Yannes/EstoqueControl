@@ -10,10 +10,11 @@
 		A655FF842442C28000B927B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655FF832442C28000B927B3 /* AppDelegate.swift */; };
 		A655FF862442C28000B927B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655FF852442C28000B927B3 /* SceneDelegate.swift */; };
 		A655FF892442C28000B927B3 /* EstoqueControl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A655FF872442C28000B927B3 /* EstoqueControl.xcdatamodeld */; };
-		A655FF8B2442C28000B927B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655FF8A2442C28000B927B3 /* ContentView.swift */; };
 		A655FF8D2442C28300B927B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A655FF8C2442C28300B927B3 /* Assets.xcassets */; };
 		A655FF902442C28300B927B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A655FF8F2442C28300B927B3 /* Preview Assets.xcassets */; };
 		A655FF932442C28300B927B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A655FF912442C28300B927B3 /* LaunchScreen.storyboard */; };
+		A6AD095E2442DA540037331A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD095D2442DA540037331A /* TabBar.swift */; };
+		A6AD09602442DA5F0037331A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD095F2442DA5F0037331A /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +22,12 @@
 		A655FF832442C28000B927B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A655FF852442C28000B927B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A655FF882442C28000B927B3 /* EstoqueControl.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EstoqueControl.xcdatamodel; sourceTree = "<group>"; };
-		A655FF8A2442C28000B927B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A655FF8C2442C28300B927B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A655FF8F2442C28300B927B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A655FF922442C28300B927B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A655FF942442C28300B927B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6AD095D2442DA540037331A /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		A6AD095F2442DA5F0037331A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				A655FF832442C28000B927B3 /* AppDelegate.swift */,
+				A6AD095F2442DA5F0037331A /* ContentView.swift */,
 				A655FF852442C28000B927B3 /* SceneDelegate.swift */,
-				A655FF8A2442C28000B927B3 /* ContentView.swift */,
+				A6AD095D2442DA540037331A /* TabBar.swift */,
 				A655FF8C2442C28300B927B3 /* Assets.xcassets */,
 				A655FF912442C28300B927B3 /* LaunchScreen.storyboard */,
 				A655FF942442C28300B927B3 /* Info.plist */,
@@ -151,8 +154,9 @@
 			files = (
 				A655FF842442C28000B927B3 /* AppDelegate.swift in Sources */,
 				A655FF892442C28000B927B3 /* EstoqueControl.xcdatamodeld in Sources */,
-				A655FF8B2442C28000B927B3 /* ContentView.swift in Sources */,
+				A6AD09602442DA5F0037331A /* ContentView.swift in Sources */,
 				A655FF862442C28000B927B3 /* SceneDelegate.swift in Sources */,
+				A6AD095E2442DA540037331A /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
