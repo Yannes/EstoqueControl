@@ -7,6 +7,8 @@
 //
 
 import SwiftUI
+
+
 struct TabBar : View {
     
     @Binding var index : Int
@@ -20,7 +22,6 @@ struct TabBar : View {
             HStack{
                 
                 Button(action: {
-                 //   playSound(sound: "sound-click", type: "mp3")
                     self.hapticImpact.impactOccurred()
                     self.index = 0
                 }) {
@@ -31,14 +32,14 @@ struct TabBar : View {
                                 .foregroundColor(Color.gray.opacity(0.5))
                             Text("heart")
                                 .foregroundColor(Color.gray.opacity(0.7))
-                                .font(.system(size: 10, design: .serif))
+                                .font(.system(size: 12, design: .serif))
                         }
                         else{
                             Image(systemName: "heart.fill")
                                 .myImageModifier()
                             Text("heart")
                                 .foregroundColor(Color.gray.opacity(0.7))
-                                .font(.system(size: 10, design: .serif))
+                                .font(.system(size: 12, design: .serif))
                         }
                     }
                 }
@@ -46,8 +47,7 @@ struct TabBar : View {
                 Spacer(minLength: 10)
                 
                 Button(action: {
-              //       playSound(sound: "sound-click", type: "mp3")
-                     self.hapticImpact.impactOccurred()
+                    self.hapticImpact.impactOccurred()
                     self.index = 1
                     
                 }) {
@@ -57,14 +57,14 @@ struct TabBar : View {
                                 .foregroundColor(Color.gray.opacity(0.5))
                             Text("heart")
                                 .foregroundColor(Color.gray.opacity(0.7))
-                                .font(.system(size: 10, design: .serif))
+                                .font(.system(size: 12, design: .serif))
                         }
                         else{
                             Image(systemName: "house.fill")
                                 .myImageModifier()
                             Text("heart")
                                 .foregroundColor(Color.gray.opacity(0.7))
-                                .font(.system(size: 10, design: .serif))
+                                .font(.system(size: 12, design: .serif))
                         }
                     }
                 }
@@ -72,8 +72,7 @@ struct TabBar : View {
                 Spacer(minLength: 10)
                 
                 Button(action: {
-               //      playSound(sound: "sound-click", type: "mp3")
-                     self.hapticImpact.impactOccurred()
+                    self.hapticImpact.impactOccurred()
                     self.index = 2
                     
                 }) {
@@ -83,14 +82,14 @@ struct TabBar : View {
                                 .foregroundColor(Color.gray.opacity(0.5))
                             Text("heart")
                                 .foregroundColor(Color.gray.opacity(0.7))
-                                .font(.system(size: 10, design: .serif))
+                                .font(.system(size: 12, design: .serif))
                         }
                         else{
                             Image(systemName: "trash.fill")
                                 .myImageModifier()
                             Text("heart")
                                 .foregroundColor(Color.gray.opacity(0.7))
-                                .font(.system(size: 10, design: .serif))
+                                .font(.system(size: 12, design: .serif))
                         }
                     }
                 }
@@ -98,8 +97,7 @@ struct TabBar : View {
                 Spacer(minLength: 10)
                 
                 Button(action: {
-               //      playSound(sound: "sound-click", type: "mp3")
-                     self.hapticImpact.impactOccurred()
+                    self.hapticImpact.impactOccurred()
                     self.index = 3
                     
                 }) {
@@ -109,14 +107,14 @@ struct TabBar : View {
                                 .foregroundColor(Color.gray.opacity(0.5))
                             Text("Ajustes")
                                 .foregroundColor(Color.gray.opacity(0.7))
-                                .font(.system(size: 10, design: .serif))
+                                .font(.system(size: 12, design: .serif))
                         }
                         else{
                             Image(systemName: "gear")
                                 .myImageModifier()
                             Text("Ajustes")
                                 .foregroundColor(Color.gray.opacity(0.7))
-                                .font(.system(size: 10, design: .serif))
+                                .font(.system(size: 12, design: .serif))
                         }
                     }
                 }
@@ -128,7 +126,7 @@ struct TabBar : View {
                 .animation(.easeInOut)
                 .edgesIgnoringSafeArea(.bottom)
         }.background(Color.primary)
-        .edgesIgnoringSafeArea(.bottom)
+            .edgesIgnoringSafeArea(.bottom)
     }
 }
 
@@ -144,8 +142,6 @@ extension Image {
                 Circle().fill(Color.red)
                     .frame(width: 40, height: 40, alignment: .center)
         )
-            
-            
             .background(
                 Circle().fill(Color.primary)
                     .frame(width: 43, height: 43, alignment: .center)
@@ -154,4 +150,5 @@ extension Image {
             .padding(.bottom, -20)
     }
 }
+
 

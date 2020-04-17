@@ -21,24 +21,22 @@ struct ContentView: View {
                 
                 if self.index == 0{
                     
-                    Color.secondary
+                    ProductListView()
                 }
                 else if self.index == 1{
                     
-                    Color.yellow
+                     Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1))
                 }
                 else if self.index == 2{
                     
-                    Color.blue
+                     Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1))
                 }
                 else{
-                    
-                    SettingsView().padding(.top,20)
+                    AjustesView()
                 }
-            }.edgesIgnoringSafeArea(.all)
-            
+            }
+        
             TabBar(index: self.$index)
-            
         }
        .edgesIgnoringSafeArea(.bottom)
     }
